@@ -1,5 +1,4 @@
 // list of lowercase token addresses that are not returned from the API
-
 export const BLACKLIST = [
   "0xe40fc6ff5f2895b44268fd2e1a421e07f567e007", // LBC
   "0xfd158609228b43aa380140b46fff3cdf9ad315de", // LBA
@@ -13,4 +12,6 @@ export const BLACKLIST = [
   "0x1bbed115afe9e8d6e9255f18ef10d43ce6608d94", // BTCST
   "0xe99512305bf42745fae78003428dcaf662afb35d", // OOE
   "0xbE609EAcbFca10F6E5504D39E3B113F808389056", // BFI
+  "0x847daf9dfdc22d5c61c4a857ec8733ef5950e82e", // FAN
+  "0xdbf8913dfe14536c0dae5dd06805afb2731f7e7b", // RMFT
 ];
