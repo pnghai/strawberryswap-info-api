@@ -1,6 +1,6 @@
-# PancakeSwap API
+# StrawberrySwap API
 
-The PancakeSwap API is a set of endpoints used by market aggregators (e.g. coinmarketcap.com) to surface PancakeSwap liquidity
+The StrawberrySwap API is a set of endpoints used by market aggregators (e.g. coinmarketcap.com) to surface StrawberrySwap liquidity
 and volume information. All information is fetched from the underlying subgraphs.
 
 ## Documentation

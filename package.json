@@ -1,9 +1,9 @@
 {
-  "name": "pancake-info-api",
+  "name": "strawberryswap-info-api",
   "version": "1.0.0",
-  "description": "Serverless API implementation for PancakeSwap on-chain data query.",
-  "repository": "git@github.com:pancakeswap/pancake-info-api.git",
-  "author": "PancakeSwap",
+  "description": "Serverless API implementation for StrawberrySwap on-chain data query.",
+  "repository": "git@github.com:strawberryswap/pancake-info-api.git",
+  "author": "StrawberrySwap",
   "license": "MIT",
   "scripts": {
     "format:check": "prettier --check '*/**/*.{js,ts}'",
