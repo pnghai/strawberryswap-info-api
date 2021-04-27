@@ -11,12 +11,6 @@
     "lint": "eslint '*/**/*.{js,ts}'",
     "codegen": "graphql-codegen --config utils/apollo/codegen.yml"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format:write",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "dependencies": {
     "@apollo/client": "^3.3.13",
     "@ethersproject/address": "^5.1.0",

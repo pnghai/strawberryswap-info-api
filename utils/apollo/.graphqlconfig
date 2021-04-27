@@ -4,7 +4,7 @@
   "extensions": {
     "endpoints": {
       "StrawberrySwap Exchange LITE": {
-        "url": "https://api.bscgraph.org/subgraphs/strawberryswap/exchange-lite",
+        "url": "https://api.thegraph.com/subgraphs/name/pnghai/strawberryswap-exchange",
         "headers": {
           "user-agent": "JS GraphQL"
         },
