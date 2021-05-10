@@ -1,18 +1,18 @@
 # Documentation
 
-All StrawberrySwap pairs consist of two different tokens. BNB is not a native currency in StrawberrySwap, and is represented only by WBNB in the pairs. 
+All PancakeSwap pairs consist of two different tokens. BNB is not a native currency in PancakeSwap, and is represented only by WBNB in the pairs. 
 
-The canonical WBNB address used by the StrawberrySwap interface is `0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c`.
+The canonical WBNB address used by the PancakeSwap interface is `0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c`.
 
 Results are cached for 5 minutes (or 300 seconds).
 
-## [`/summary`](https://api-info.strawberryswap.link/api/summary)
+## [`/v2/summary`](https://api.pancakeswap.info/api/v2/summary)
 
-Returns data for the top ~1000 StrawberrySwap pairs, sorted by reserves. 
+Returns data for the top ~1000 PancakeSwap pairs, sorted by reserves. 
 
 ### Request
 
-`GET https://api-info.strawberryswap.link/api/summary`
+`GET https://api.pancakeswap.info/api/v2/summary`
 
 ### Response
 
@@ -32,13 +32,13 @@ Returns data for the top ~1000 StrawberrySwap pairs, sorted by reserves.
 }
 ```
 
-## [`/tokens`](https://api-info.strawberryswap.link/api/tokens)
+## [`/v2/tokens`](https://api.pancakeswap.info/api/v2/tokens)
 
-Returns the tokens in the top ~1000 pairs on StrawberrySwap, sorted by reserves. 
+Returns the tokens in the top ~1000 pairs on PancakeSwap, sorted by reserves.
 
 ### Request
 
-`GET https://api-info.strawberryswap.link/api/tokens`
+`GET https://api.pancakeswap.info/api/v2/tokens`
 
 ### Response
 
@@ -57,13 +57,35 @@ Returns the tokens in the top ~1000 pairs on StrawberrySwap, sorted by reserves.
 }
 ```
 
-## [`/pairs`](https://api-info.strawberryswap.link/api/pairs)
+## [`/v2/tokens/0x...`](https://api.pancakeswap.info/api/v2/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82)
 
-Returns data for the top ~1000 StrawberrySwap pairs, sorted by reserves.
+Returns the token information, based on address.
 
 ### Request
 
-`GET https://api-info.strawberryswap.link/api/pairs`
+`GET https://api.pancakeswap.info/api/v2/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82`
+
+### Response
+
+```json5
+{
+  "updated_at": 1234567,              // UNIX timestamp
+  "data": {
+    "name": "...",                    // not necessarily included for BEP20 tokens
+    "symbol": "...",                  // not necessarily included for BEP20 tokens
+    "price": "...",                   // price denominated in USD
+    "price_BNB": "...",               // price denominated in BNB
+  }
+}
+```
+
+## [`/v2/pairs`](https://api.pancakeswap.info/api/v2/pairs)
+
+Returns data for the top ~1000 PancakeSwap pairs, sorted by reserves.
+
+### Request
+
+`GET https://api.pancakeswap.info/api/v2/pairs`
 
 ### Response
 
