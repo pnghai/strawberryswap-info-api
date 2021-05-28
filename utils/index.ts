@@ -1,3 +1,4 @@
+require('dotenv').config();
 import BigNumber from "bignumber.js";
 import { BLACKLIST } from "./constants/blacklist";
 import { client } from "./apollo/client";
